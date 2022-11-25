@@ -12,4 +12,18 @@ function solution(number, limit, power) {
     // 각 숫자의 약수의 개수 저장
     primeNum.push(count);
   }
+
+  return primeNum
+    .map((num) => {
+      return num > limit ? power : num;
+    })
+    .reduce((acc, cur) => {
+      return acc + cur;
+    }, 0);
+
+  // return primeNum.map((n) => {
+  //   return n > limit ? power : n;
+  // });
 }
+
+console.log(solution(10, 500, 2));
