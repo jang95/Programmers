@@ -17,3 +17,8 @@ function solution(babbling) {
 
   return answer;
 }
+
+// 새로 발견한 점
+/*
+  forEach문 안에서 break, return를 사용할 수 없다.
+*/
