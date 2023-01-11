@@ -2,6 +2,7 @@ function solution(number) {
   var answer = 0;
 
   const combination = (current, start) => {
+    // 3가지 수가 모였을 때 0인지 확인
     if (current.length === 3) {
       answer += current.reduce((acc, cur) => acc + cur, 0) === 0 ? 1 : 0;
       return;
@@ -11,6 +12,7 @@ function solution(number) {
       combination([...current, number[i]], i + 1);
     }
   };
+  // 초기화
   combination([], 0);
 
   return answer;
