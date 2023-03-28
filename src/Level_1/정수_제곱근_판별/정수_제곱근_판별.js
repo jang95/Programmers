@@ -8,7 +8,7 @@ function solution(n) {
 // 다른 사람 풀이
 // 속도가 느리고 메모리 사용량이 좀 높지만 메서드를 사용하지 않는 방법
 function solution(n) {
-  var answer = 0;
+  let answer = 0;
 
   for (let i = 0, a = 0; i <= n; i++) {
     if (n / i === i) {
