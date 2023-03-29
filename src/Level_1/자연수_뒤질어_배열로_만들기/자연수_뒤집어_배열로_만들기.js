@@ -10,7 +10,6 @@ function solution(n) {
 
 // 숫자풀이
 function solution(n) {
-  // 숫자풀이
   var arr = [];
 
   do {
