@@ -28,3 +28,14 @@ const matrixAddition = (matrix1, matrix2) =>
 function solution(arr1, arr2) {
   return matrixAddition(arr1, arr2);
 }
+
+// 다시보기
+function solution(n, arr1, arr2) {
+    return arr1.map((x, idx) => {
+        const binary = 
+        while ((x | arr2[idx]).toString(2).length !== n) {
+            return (0 + (x | arr2[idx]).toString(2)).replaceAll("0", " ").replaceAll("1", "#");
+        }
+        return (x | arr2[idx]).toString(2).replaceAll("0", " ").replaceAll("1", "#");
+    });;
+}
