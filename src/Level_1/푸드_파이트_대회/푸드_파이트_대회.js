@@ -31,6 +31,14 @@ function solution(food) {
   return list.join('') + '0' + list.reverse().join('');
 }
 
+// 나의 풀이2 리팩토링
+function solution(food) {
+  const list = food
+    .map((x, idx) => (~~(x / 2) !== 0 ? ('' + idx).repeat(~~(x / 2)) : 0))
+    .filter((x) => x != 0);
+  return list.join('') + '0' + list.reverse().join('');
+}
+
 // 다른 사람 풀이
 function solution(food) {
   let res = '';
