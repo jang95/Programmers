@@ -46,3 +46,7 @@ function solution(board, moves) {
 }
 
 solution(Board, Moves);
+
+// 비록 잘못된 풀이 방식이지만 테스트는 통과함...?
+// 잘못된 이유
+// 인형을 다 뽑은 후에 다음 작업을 하는거 자체가 잘못된 부분
